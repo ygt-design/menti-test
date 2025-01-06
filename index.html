@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentimeter Embed Example</title>
+    <title>Mobile-Optimized Mentimeter Embed</title>
     <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
         .responsive-iframe-container {
             position: relative;
             padding-bottom: 56.25%;
             /* Aspect ratio: 16:9 */
-            padding-top: 35px;
+            padding-top: 30px;
             height: 0;
             overflow: hidden;
         }
@@ -23,10 +29,21 @@
             height: 100%;
             border: 0;
         }
+
+        .header {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 18px;
+        }
     </style>
 </head>
 
 <body>
+    <div class="header">
+        Mentimeter Presentation
+    </div>
     <div class="responsive-iframe-container">
         <iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true"
             allowtransparency="true"
